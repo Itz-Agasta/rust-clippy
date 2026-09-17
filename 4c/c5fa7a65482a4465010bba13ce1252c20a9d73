@@ -1,0 +1,35 @@
+clippy_lints/src/eta_reduction.rs
+  s_6e34fda0015558::t_c2248ce464a7a0 269-274
+tests/ui/eta.fixed
+  s_6e34fda0015558::t_2ed6e596b59c31 707-709,711,715
+  s_6e34fda0015558::t_7010570359e902 716
+  s_6e34fda0015558::t_04c4b57ec8942d 690-706,710,712-714
+tests/ui/eta.rs
+  s_6e34fda0015558::t_7010570359e902 715
+  s_6e34fda0015558::t_6a4b493a12a386 690-706,710-714
+  s_6e34fda0015558::t_2ed6e596b59c31 707-709
+  s_6e34fda0015558::t_1f1baadf8cd466 716
+clippy_utils/src/lib.rs
+  s_6e34fda0015558::t_40ef79193f45ad 3271-3282
+  s_6e34fda0015558::t_4a2f2740ed840a 3296-3297
+  s_6e34fda0015558::t_ac6b76c96a10e2 3251-3253
+  s_6e34fda0015558::t_342856e322c14f 3259,3263
+  s_6e34fda0015558::t_d3e6a7adbaff07 3294,3306,3309-3310
+  s_6e34fda0015558::t_96adb1f84906f0 3266,3283-3293,3298
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4cc5fa7a65482a4465010bba13ce1252c20a9d73",
+  "prompts": {},
+  "sessions": {
+    "s_6e34fda0015558": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "070f0b5e-1c5b-4360-85bc-3402bee5e131",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Itz-Agasta <rupamgolui69@gmail.com>"
+    }
+  }
+}
