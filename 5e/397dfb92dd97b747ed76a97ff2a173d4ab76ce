@@ -1,0 +1,42 @@
+clippy_utils/src/lib.rs
+  s_6e34fda0015558::t_40ef79193f45ad 3271-3282
+  s_6e34fda0015558::t_d3e6a7adbaff07 3294,3305,3308-3309
+  s_d7da857aef6f17::t_f96a2fd6c82127 3296-3297
+  s_6e34fda0015558::t_ac6b76c96a10e2 3251-3253
+  s_6e34fda0015558::t_342856e322c14f 3259,3263
+  s_6e34fda0015558::t_96adb1f84906f0 3266,3283-3293
+clippy_lints/src/eta_reduction.rs
+  s_6e34fda0015558::t_c2248ce464a7a0 269-274
+tests/ui/eta.rs
+  s_6e34fda0015558::t_6a4b493a12a386 690-705,712
+  s_d7da857aef6f17::t_70d0ef439d4ffb 706-711,713-715
+  s_6e34fda0015558::t_1f1baadf8cd466 716
+tests/ui/eta.fixed
+  s_6e34fda0015558::t_04c4b57ec8942d 690-705,712
+  s_d7da857aef6f17::t_70d0ef439d4ffb 706-711,713-715
+  s_6e34fda0015558::t_7010570359e902 716
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5e397dfb92dd97b747ed76a97ff2a173d4ab76ce",
+  "prompts": {},
+  "sessions": {
+    "s_6e34fda0015558": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "070f0b5e-1c5b-4360-85bc-3402bee5e131",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    },
+    "s_d7da857aef6f17": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b22997ec-176b-497e-8fc6-0fc22f248a74",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    }
+  }
+}
