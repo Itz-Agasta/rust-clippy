@@ -236,6 +236,9 @@ impl TestContext {
                 // FIXME(#160895): While the new solver is enabled by default on nightly,
                 // we don't want to use it in our tests for now.
                 "-Znext-solver=coherence",
+                // Run tests with the sequential frontend, for now, because the parallel frontend can
+                // produce non-deterministic order of diagnostics
+                "-Zthreads=1",
                 "-Dwarnings",
             ]
             .map(OsString::from),
@@ -691,11 +694,21 @@ impl LintMetadata {
         }
     }
 
-    fn applicability_str(&self) -> &str {
+    fn applicability_id(&self) -> &str {
         match self.applicability {
             Applicability::MachineApplicable => "MachineApplicable",
             Applicability::HasPlaceholders => "HasPlaceholders",
             Applicability::MaybeIncorrect => "MaybeIncorrect",
+            Applicability::Unspecified => "Unspecified",
+            _ => panic!("needs to update this code"),
+        }
+    }
+
+    fn applicability_str(&self) -> &str {
+        match self.applicability {
+            Applicability::MachineApplicable => "Machine applicable",
+            Applicability::HasPlaceholders => "Suggestion contains placeholders",
+            Applicability::MaybeIncorrect => "May be incorrect",
             Applicability::Unspecified => "Unspecified",
             _ => panic!("needs to update this code"),
         }
